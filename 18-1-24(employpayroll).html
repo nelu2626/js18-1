@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+        var emp = new Object()
+         emp.no = 203331
+         emp.Ename = 'Kishore'
+         emp.Position = 'Manager'
+         emp.Salary = 60000
+         emp.Travelallowance = '50%'
+         emp.Dearnessallowance = '40%'
+         emp.Houserentallowance = '30%'
+         emp.Capitalcostallowance = '25%'
+         emp.Providentfund = '15%'
+         emp.Incometax = '10%'
+         emp.Lifeinsurancecorporation = '5%'
+         emp.Totalallowances =parseInt(emp.Travelallowance)+parseInt(emp.Dearnessallowance)+parseInt(emp.Houserentallowance)+parseInt(emp.Capitalcostallowance)/100
+         emp.Totaldeductions =parseInt(emp.Providentfund)+parseInt(emp.Incometax)+parseInt(emp.Lifeinsurancecorporation)/100
+         emp.Gross = parseInt(emp.Salary)+parseInt(emp.Totalallowances)
+         emp.Net = parseInt(emp.Gross)-parseInt(emp.Totaldeductions)
+         
+
+         
+         
+        
+       
+        console.log('Employee Id:'+emp.no)
+        console.log('Employee Name:'+emp.Ename)
+        console.log('Employee Role:'+emp.Position)
+        console.log('Employee Salary:'+emp.Salary)
+        console.log('Employee Travelallowance:'+emp.Travelallowance)
+        console.log('Employee Dearnessallowance:'+emp.Dearnessallowance)
+        console.log('Employee Houserentallowance:'+emp.Houserentallowance)
+        console.log('Employee Capitalcostallowance:'+emp.Capitalcostallowance)
+        console.log('Employee TotalAllowances:'+emp.Totalallowances +'%')
+        console.log('Employee TotalDeductions:'+emp.Totaldeductions +'%')
+        console.log('Employee Gross:' +emp.Gross)
+        console.log('Employee Net:' +emp.Net)
+
+
+
+
+
+
+
+       
+        
+
+
+    </script>
+    
+        
+        
+     
+</body>
+</html>
